@@ -1,0 +1,5 @@
+<%= @article.errors.any? %>
+  <%- @article.each do |message| %>
+    <%= message.first %>
+  <% end %>
+<% end %>
